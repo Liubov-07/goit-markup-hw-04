@@ -104,7 +104,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:hover,
@@ -155,7 +155,7 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url("../images/");
+    url("../images/people-office.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -268,25 +268,31 @@ img {
   text-align: center;
 }
 
-.social-icons a {
-  background-color: #4d5ae5;
-  width: 40px;
+.social-icons {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
-  align-items: center;
   justify-content: center;
-  border-radius: 50%;
-  transition: background-color 0.3s ease;
+  gap: 16px;
+  padding-top: 8px;
 }
 
 .social-icons a:hover {
   background-color: #404bbf;
 }
 
-.social-icons {
+.social-media {
   display: flex;
   justify-content: center;
   gap: 24px;
   padding-top: 8px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.social-list {
 }
 
 .social-link {
@@ -294,10 +300,10 @@ img {
   height: 40px;
   border-radius: 50%;
   background-color: #4d5ae5;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 250ms ease;
+  transition: background-color 0.3s ease;
 }
 
 .social-link:hover,
@@ -326,9 +332,21 @@ img {
   overflow: hidden;
 }
 
+.team-card {
+  transition: box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .workers {
   padding-top: 32px;
   padding-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .workers h3 {
@@ -348,6 +366,8 @@ img {
 .team-list {
   display: flex;
   gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .icon-container {
   display: flex;
@@ -458,7 +478,7 @@ img {
   color: #f4f4fd;
 }
 
-.social-media {
+.social-med {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
